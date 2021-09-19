@@ -1,0 +1,51 @@
+html, body {
+  background:#627C85;
+  font-size: 16px;
+  color: #3F8EFC;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  color: #9FB4C7;
+  font-family: Arial;
+  margin: 10px;
+}
+
+#My_Profile {
+  width: 90%;
+  max-width: 900px;
+  background: #28587B;
+  margin: 30px auto;
+}
+
+h1 {
+  border-bottom: 3px solid #7F7CAF;
+  color: #9FB798;
+  padding: 20px 0 0;
+  font-family: Verdana;
+}
+
+h2 {
+  font-size: 20px;
+  color: #9FB798;
+  padding: 20px 0 0;
+  margin: 10px;
+  font-family: Verdana;
+}
+
+h3 {
+  color: #9FB798;
+  padding: 20px 0 0;
+  margin: 10px;
+  font-family: Verdana;
+}
+
+h4 {
+  color: #9FB798;
+  padding: 20px 0 0;
+  margin: 10px;
+  font-family: Verdana;
+  margin-bottom: -6px;
+}

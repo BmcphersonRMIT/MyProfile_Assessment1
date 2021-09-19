@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Project Idea</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      table, th, td {
+        border: 2px solid black;
+        text-align: left;
+        color: #9FB4C7
+        padding: 20px 0 0;
+        margin-bottom: 20px;
+      }
+
+      tr {
+        background-color: #D6EEEE;
+      }
+    </style>
+  </head>
+  <body>
+  <div id="My_Profile">
+    <div id="title_header">
+      <h1>Project Idea</h1>
+    </div>
+    <div id="project_overveiw_content">
+      <h2>The Softkey</h2>
+      <br>
+      <h4>Overview:</h4>
+        <p>My project idea is the ability to unlock any door that has a latch without using a key, there will be no physical interaction with the door as it will be unlocked using a simple app which I’ve developed. The app will be android only as I will not be publishing it on the google app store and will not be compatible on the iOS as they do not support apps that have not been published on the apple app store. A raspberry Pi will near the latch so it can be unlocked from the outside. This device will be connected to my internal network. When my device is in range of Wi-Fi, the two devices can talk, and the app will then have a button to unlock the door. The result will be to unlock the door without a physical key.</p>
+        <br>
+    </div>
+    <div id="project_motivation_content">
+      <h4>Motivation:</h4>
+        <p>There have been too many times where I’ve locked myself out of my apartment due to leaving my keys inside the apartment. Thinking that this was just something that I did, it turns out that my friends have done the exact same thing. This resulted in calling a locksmith out to which can be very expensive especially after hours. Sometimes you would have to wait a significant amount of time for their arrival which can chew up precious time over the weekend or afterwork. Although this solution wouldn’t be optimal to sell commercially, it would be good to have personally and offer something that my friends and family would find beneficial. This in turn will save some money and time.</p>
+        <br>
+    </div>
+    <div id="project_description_content">
+      <h4>Description:</h4>
+        <p>The softkey will consist of many components. A mobile phone will be needed for the mobile app and to be connected to Wi-Fi, the radius should extend pass the front door so that the device automatically connects and can talk with the Raspberry PI. This is where the app will come in handy, the app will be installed manually mobile phone in the form of a APK file as it will not be published through google play. The app will be built using the JavaScript programming language which is recommended for app development over Python.</p>
+        <br>
+        <p>Once the app is open, there will be two buttons, one for “Unlock” and one for “Lock”. Once the unlock button is pressed, the app will also trigger a command for the Raspberry PI to process and execute the motor push the lock lever. The lock button can be pushed to have the reverse effect which is to lock the door. If the lock button isn’t pushed within 2 minutes after the door is unlocked, a python script on the Raspberry PI will execute and lock the door automatically.</p>
+        <br>
+        <p>The Raspberry PI provides the intelligence for processing the commands from the user’s phone app, the app on the raspberry PI will be built using Python. Once the command has been processed an electrical current from the Raspberry PI PINs will trigger the motor which will be responsible for the component unlocking the door lock latch.</p>
+        <br>
+        <p>Other features included will be a notification sent over the internet to the mobile phone whenever the door is unlocked. This is useful in case an intruder attempts to hack the network and break into the Raspberry PI and executing the python script. An LED connected to the Raspberry PI, this will sit slightly outside the casing, the LED will flash to indicate that the Raspberry PI is processing the Python script. This will be useful when troubleshooting the device. Because the device is connected to the network, there is potential for remoting into the backend of the device to unlock the door from my office as an example. This is useful for when a family member is coming over, but they are unable to let themselves into the apartment because I’m out or at work.</p>
+        <br>
+    </div>
+    <div id="tools_and_technologies_content">
+      <h4>Tools and Technologies</h4>
+        <p>The tools and equipment that will be required for this project will be a Raspberry PI 4 model B, this model is required for the Wi-Fi module which will connect to the home internet router and will have 2GB of memory which should be plenty to have the script open.</p>
+        <br>
+        <p>A battery to provide power to the device, this should last about 7 hours. A desktop computer to constantly ping the device to avoid it from going to sleep, this is so the network module stays active. A motor to unlock the door latch. Will need casing to house the Raspberry PI, battery, and motor.</p>
+        <p>Double-sided tape to hold the equipment against the door, I live in a unit so I will not be allowed to bolt the devices in. Internet access to send the alerts when the door opens router that offers Wi-Fi connectivity to the Raspberry PI so you can interface with it, most home routers will have Wi-Fi built in.</p>
+        <br>
+    </div>
+    <div id="skills_required_content">
+      <h4>Skills required:</h4>
+        <p>There will be a lot of skills required for this project, the first will be to set up the raspberry PI operating system which has plenty of documentation on the web. Skills for writing the JavaScript and Python code (additional libraries may be required) which is obtainable over the web and has plenty of documentation.</p>
+        <br>
+        <p>Basic electronic skills to connect the motor to the Raspberry PI. some understating of how motors work. Knowledge in using android studio to package the APK app. A bit of DYI and imagination will be needed for the presentation, this is to protect the equipment and to offer stability against the door. The case will be bought for the Raspberry PI but other peripherals may require more sophisticated measures such as printing a custom casing via a 3D printer.</p>
+    </div>
+    <div id="outcome_content">
+      <h4>Outcome:</h4>
+        <p>If all goes well, the door lock should in theory unlock from the outside provided that the hardware and software are configured correctly, and the router and PC are still powered on. This would allow the user to open the door without having to physically unlock the door with a key. This will mitigate any need to call a locksmith out in an event that the keys were either lost or left in the apartment which will save money and time.</p>
+        <br>
+    </div>
+    <div id="references">
+      <h3>References:</h3>
+      <table>
+        <tr>
+          <th>Raspberry PI 4 Model B</th>
+            <td><a href="https://raspberry.piaustralia.com.au/products/raspberry-pi-4" target="_blank">https://raspberry.piaustralia.com.au/products/raspberry-pi-4</a></td>
+        </tr>
+        <tr>
+          <th>Configuring Raspberry Pi Wi-Fi tutorial</th>
+            <td><a href="https://www.seeedstudio.com/blog/2021/01/25/three-methods-to-configure-raspberry-pi-wifi/" target="_blank">https://www.seeedstudio.com/blog/2021/01/25/three-methods-to-configure-raspberry-pi-wifi/</a></td>
+        </tr>
+        <tr>
+          <th>Raspberry Pi Battery Pack</th>
+            <td><a href="https://raspberry.piaustralia.com.au/products/usb-battery-pack-4400" target="_blank">https://raspberry.piaustralia.com.au/products/usb-battery-pack-4400</a></td>
+        </tr>
+        <tr>
+          <th>Motor for Raspberry Pi</th>
+            <td><a href="https://core-electronics.com.au/adafruit-dc-stepper-motor-hat-for-raspberry-pi-mini-kit.html?utm_source=google_shopping&gclid=CjwKCAjw-ZCKBhBkEiwAM4qfFzyHUlGIH1aGsQuYM0aEJZi-eBNGqLEDSD0al3T1ZyKhtCIfchS1tRoCD58QAvD_BwE" target="_blank">https://core-electronics.com.au/adafruit-dc-stepper-motor-hat-for-raspberry-pi-mini-kit.html?utm_source=google_shopping&gclid=CjwKCAjw-ZCKBhBkEiwAM4qfFzyHUlGIH1aGsQuYM0aEJZi-eBNGqLEDSD0al3T1ZyKhtCIfchS1tRoCD58QAvD_BwE</a></td>
+        </tr>
+        <tr>
+          <th>How motors work</th>
+            <td><a href="https://www.jameco.com/Jameco/workshop/ProductNews/motor-buyers-guide.html" target="_blank">https://www.jameco.com/Jameco/workshop/ProductNews/motor-buyers-guide.html</a></td>
+        </tr>
+        <tr>
+          <th>JavaScript for mobile app development</th>
+            <td><a href="http://zesium.com/the-best-programming-languages-for-your-mobile-app-development/" target="_blank">http://zesium.com/the-best-programming-languages-for-your-mobile-app-development/</a></td>
+        </tr>
+        <tr>
+          <th>Python script idea</th>
+            <td><a href="https://www.fanvil.com/Uploads/Temp/download/20190401/5ca1862d98069.pdf" target="_blank">https://www.fanvil.com/Uploads/Temp/download/20190401/5ca1862d98069.pdf</a></td>
+        </tr>
+        <tr>
+          <th>Double-sided tape</th>
+            <td><a href="https://www.seton.net.au/very-high-bond-double-sided-tape.html?utm_source=google_shopping&gclid=CjwKCAjw-ZCKBhBkEiwAM4qfF5OgE9Sx2yq1rqP5afFqOIWWVq93fE7qyZgfiakl9FX_vyrwP7aG8BoCPlQQAvD_BwE" target="_blank">https://www.seton.net.au/very-high-bond-double-sided-tape.html?utm_source=google_shopping&gclid=CjwKCAjw-ZCKBhBkEiwAM4qfF5OgE9Sx2yq1rqP5afFqOIWWVq93fE7qyZgfiakl9FX_vyrwP7aG8BoCPlQQAvD_BwE</a></td>
+        </tr>
+      </table>
+      <br>
+    </div>
+    <div id="page_index">
+      <h3>Links to other pages:</h3>
+      <table>
+        <tr>
+          <th>Page 1: Personal Information</th>
+            <td><a href="personal_information.html" target="_blank">Personal Information</a></td>
+        </tr>
+        <tr>
+          <th>Page 2: Interest in Information Technology</th>
+            <td><a href="interest_in_information_technology.html" target="_blank">Interest in Information Technology</a></td>
+        </tr>
+        <tr>
+          <th>Page 3: Ideal Job</th>
+            <td><a href="ideal_job.html" target="_blank">Ideal Job</a></td>
+        </tr>
+        <tr>
+          <th>Page 4: Profile</th>
+            <td><a href="profile.html" target="_blank">Profile</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  </body>
+</html>
